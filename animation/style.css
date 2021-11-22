@@ -30,7 +30,7 @@ body {
     position: absolute;
     width: 700px;
     height: 87px;
-    background: url(terreno.jpg);
+    background: url(imagens/terreno.jpg);
     left: -1px;
     top: 505px;
 }
@@ -39,7 +39,7 @@ body {
     position: absolute;
     width: 100px;
     height: 100px;
-    background: url(car.png);
+    background: url(imagens/car.png);
     background-size: contain;
     top: 510px;
     left: 0px;
@@ -58,7 +58,7 @@ body {
     height: 400px;
     top: -90px;
     left: 0px;
-    background: url(planet.png);
+    background: url(imagens/planet.png);
 
     animation-name: andar-lua;
     animation-duration: 30s;
@@ -71,7 +71,7 @@ body {
     position: relative;
     border: 1px solid red;
     height: 590px;
-    background: url(space.png);
+    background: url(imagens/space.png);
 }
 
 #mundo:hover #carro {
