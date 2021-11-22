@@ -44,7 +44,7 @@ body {
     top: 510px;
     left: 0px;
 
-    animation-name: andar;
+    animation-name: andar-carro;
     animation-duration: 4s;
     animation-delay: 0.5s;
     animation-direction: alternate;
@@ -88,7 +88,7 @@ body {
     to {transform: translateX(300px);}
 }
 
-@keyframes andar {
+@keyframes andar-carro {
     from {transform: translateX(0px);}
     to {transform: translateX(600px);}
 }
