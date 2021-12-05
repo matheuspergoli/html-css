@@ -49,3 +49,15 @@ nav > ul > li:last-child {
 nav > ul > li:nth-child(3) {
     background-color: #ccc;
 }
+
+nav > ul > li:nth-of-type(4) {
+    list-style-type: none;
+}
+
+nav > ul > li:nth-child(4) > a {
+    text-decoration: none;
+}
+
+[meu-atributo="valor"] {
+    color: yellow;
+}
