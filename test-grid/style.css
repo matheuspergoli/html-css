@@ -1,63 +1,33 @@
 body {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: 100vh; */
     background-color: hsl(204, 43%, 93%);
 }
 
 .box {
     background-color: #bdbdbd;
+    border: 2px solid #333;
+    min-height: 100px;
     padding: 10px;
 }
 
-.container {
+.grid {
+    margin: 0px auto;
+    max-width: 1200px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1.3fr;
-    grid-template-areas: 
-    "box1 box1"
-    "box2 box3";
-    width: 650px;
-    height: 470px;
+    grid-template-columns: 
+    [um] 1fr 
+    [dois] 1fr 
+    [tres] 1fr 
+    [quatro];
+    /* grid-template-rows: repeat(2, 2fr 1fr); */
+    /* grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); */
+    gap: 30px;
 }
 
-.box1 {
-    grid-area: box1;
-    border-radius: 10px 10px 0px 0px;
-    background-color: white;
-}
-
-.box2 {
-    grid-area: box2;
-    border-bottom-left-radius: 10px;
-    background-color: hsl(179, 62%, 43%);
-}
-
-.box3 {
-    grid-area: box3;
-    border-bottom-right-radius: 10px;
-    background-color: hsla(179, 62%, 43%, 0.63);
-}
-
-@media (max-width: 650px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 2fr 2fr;
-        grid-template-areas: 
-        "box1"
-        "box2"
-        "box3";
-        width: 375px;
-        height: 850px;
-    }
-
-    .box1 {
-        border-radius: 10px 10px 0px 0px;
-    }
-
-    .box3 {
-        border-radius: 0px 0px 10px 10px;
-    }
+.box5 {
+    grid-column: um / quatro;
 }

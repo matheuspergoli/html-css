@@ -1,6 +1,5 @@
 * {
     margin: 0px;
-    border: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
@@ -9,6 +8,6 @@ ul, ol, li {
     list-style: none;
 }
 
-body {
+html {
     font-family: "Open Sans" sans-serif;
 }
