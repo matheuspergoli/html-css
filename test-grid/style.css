@@ -1,33 +1,31 @@
 body {
-    /* display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh; */
-    background-color: hsl(204, 43%, 93%);
+    height: 100vh;
 }
 
 .box {
-    background-color: #bdbdbd;
+    border-radius: 10px;
     border: 2px solid #333;
-    min-height: 100px;
-    padding: 10px;
+    background-color: #bdbdbd;
 }
 
 .grid {
-    margin: 0px auto;
-    max-width: 1200px;
+    width: 900px;
+    height: 600px;
     display: grid;
-    grid-template-columns: 
-    [um] 1fr 
-    [dois] 1fr 
-    [tres] 1fr 
-    [quatro];
-    /* grid-template-rows: repeat(2, 2fr 1fr); */
-    /* grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); */
-    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas:
+    "box1 box1 box2 box3"
+    "box4 box5 box5 box3";
 }
 
-.box5 {
-    grid-column: um / quatro;
-}
+.box1 {grid-area: box1;}
+.box2 {grid-area: box2;}
+.box3 {grid-area: box3;}
+.box4 {grid-area: box4;}
+.box5 {grid-area: box5;}
